@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Web教材とIoTトイを用いて、IoTの仕組みを体験的に学ぶ教材です。"
+  >
+
+  <title>IoT体験学習教材</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/common.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="./index.html">
+        IoT体験学習教材
+      </a>
+
+      <nav class="header-nav" aria-label="メインメニュー">
+        <a href="#about">教材について</a>
+        <a href="#flow">学習の流れ</a>
+        <a href="#goal">学習目標</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-label">
+            Web教材 × IoTトイ
+          </p>
+
+          <h1>
+            IoTの仕組みを、<br>
+            見て、触って、体験しよう。
+          </h1>
+
+          <p class="hero-description">
+            Web教材と実物のIoTトイを使って、
+            センサによる情報取得、ネットワーク通信、
+            データの可視化、デバイス操作の流れを学びます。
+          </p>
+
+          <button id="start-button" class="primary-button" type="button">
+            学習を始める
+          </button>
+        </div>
+
+        <div class="hero-visual" aria-label="IoTの情報の流れ">
+          <div class="visual-card sensor-card">
+            <span class="visual-number">1</span>
+            <strong>センサ</strong>
+            <small>現実の情報を取得</small>
+          </div>
+
+          <span class="visual-arrow" aria-hidden="true">→</span>
+
+          <div class="visual-card network-card">
+            <span class="visual-number">2</span>
+            <strong>通信</strong>
+            <small>データを送信</small>
+          </div>
+
+          <span class="visual-arrow" aria-hidden="true">→</span>
+
+          <div class="visual-card monitor-card">
+            <span class="visual-number">3</span>
+            <strong>可視化</strong>
+            <small>Web上で確認</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <div class="section-heading">
+        <p class="section-label">ABOUT</p>
+        <h2>この教材について</h2>
+
+        <p>
+          IoTに詳しくない学習者でも、Web上の説明と実物の操作を通して、
+          IoTの基本的な仕組みを学べる教材を目指しています。
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">01</div>
+          <h3>Webで学ぶ</h3>
+          <p>
+            IoTの定義や構成要素、身近な活用例を順番に学習します。
+          </p>
+        </article>
+
+        <article class="feature-card beige-card">
+          <div class="feature-icon" aria-hidden="true">02</div>
+          <h3>データを見る</h3>
+          <p>
+            実物のセンサから取得したデータをWeb上で確認します。
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">03</div>
+          <h3>実物を操作する</h3>
+          <p>
+            可視化された情報を利用しながら、IoTトイを操作します。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="flow" class="content-section flow-section">
+      <div class="section-heading">
+        <p class="section-label">LEARNING FLOW</p>
+        <h2>学習の流れ</h2>
+      </div>
+
+      <ol class="learning-flow">
+        <li>
+          <span class="flow-number">1</span>
+
+          <div>
+            <h3>IoTについて学ぶ</h3>
+            <p>
+              センサ、通信、データ処理、可視化、機器制御について学習します。
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="flow-number">2</span>
+
+          <div>
+            <h3>センサデータを確認する</h3>
+            <p>
+              IoTトイから送られたセンサデータをWeb画面に表示します。
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="flow-number">3</span>
+
+          <div>
+            <h3>協力してゲームに挑戦する</h3>
+            <p>
+              PC担当とトイ担当に分かれ、センサデータを利用して課題を解決します。
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="flow-number">4</span>
+
+          <div>
+            <h3>IoTの流れを振り返る</h3>
+            <p>
+              取得した情報がどのように送信・利用されたかを確認します。
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="goal" class="content-section">
+      <div class="goal-panel">
+        <div>
+          <p class="section-label">GOAL</p>
+          <h2>この教材の学習目標</h2>
+        </div>
+
+        <ul class="goal-list">
+          <li>IoTの基本的な仕組みを説明できる</li>
+          <li>センサの役割を説明できる</li>
+          <li>ネットワークを介してデータを確認できることを理解する</li>
+          <li>可視化したデータを機器の操作に利用できることを理解する</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="start-section">
+      <div class="start-panel">
+        <p>準備ができたら、IoTの基礎学習を始めましょう。</p>
+
+        <button id="bottom-start-button" class="primary-button" type="button">
+          学習を始める
+        </button>
+
+        <p id="development-message" class="development-message" aria-live="polite">
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>IoT体験学習教材</p>
+    <small>現在開発中の教材です。</small>
+  </footer>
+</body>
+</html>
